@@ -1,0 +1,15 @@
+ul {
+  margin-bottom: 0;
+
+  li {
+    list-style-type: none;
+    padding: 1em;
+  }
+
+  .manage {
+    list-style-type: none;
+    position: relative;
+    top: 1em;
+    right: 2em;
+  }
+}

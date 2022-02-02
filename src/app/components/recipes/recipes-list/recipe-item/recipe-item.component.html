@@ -1,0 +1,11 @@
+<a href="#"
+  class="list-group-item clearfix"
+  (click)="onSelected()">
+  <div class="pull-left">
+    <h2 class="list-group-item-heading">{{ itemsListElement.name }}</h2>
+    <p class="list-group-item-text">{{ itemsListElement.description }}</p>
+  </div>
+  <span class="pull-right">
+    <img [src]="itemsListElement.imagePath" [alt]="itemsListElement.name" class="img-responsive">
+  </span>
+</a>
