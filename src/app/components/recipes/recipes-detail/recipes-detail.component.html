@@ -19,10 +19,10 @@
         Administrar
         <span class="caret"></span>
       </button>
-      <ul class="dropdown-menu">
+      <ul class="dropdown-menu cursor-pointer">
         <li (click)="sendToShoppingList()"><a>Añadir a la lista de la compra</a></li>
-        <li><a href="">Editar</a></li>
-        <li><a href="">Eliminar</a></li>
+        <li (click)="onEditRecipe()"><a>Editar</a></li>
+        <li><a>Eliminar</a></li>
       </ul>
     </div>
   </div>

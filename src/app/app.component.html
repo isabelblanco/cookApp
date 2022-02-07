@@ -1,12 +1,8 @@
-<app-header
-  (recipesSelected)="setView('recipes')"
-  (shoppingListSelected)="setView('shoppingList')"
-></app-header>
+<app-header></app-header>
 <div class="container">
   <div class="row">
     <div class="col">
-      <app-recipes *ngIf="(view === 'recipes')"></app-recipes>
-      <app-shopping-list *ngIf="(view === 'shoppingList')"></app-shopping-list>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>
