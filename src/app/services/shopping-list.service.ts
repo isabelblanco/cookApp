@@ -1,4 +1,3 @@
-import { newArray } from '@angular/compiler/src/util';
 import { EventEmitter, Injectable } from '@angular/core';
 import { Ingredient } from '../models/ingredient.model';
 
@@ -25,6 +24,11 @@ export class ShoppingListService {
 
   addIngredient(ingredient: Ingredient) {
     this.listOfIngredients.push(ingredient);
+    this.ingredientChanged.emit(this.listOfIngredients.slice());
+  }
+
+  addListOfIngredients(ingredients: Ingredient[]) {
+    this.listOfIngredients.push(...ingredients);
     this.ingredientChanged.emit(this.listOfIngredients.slice());
   }
 

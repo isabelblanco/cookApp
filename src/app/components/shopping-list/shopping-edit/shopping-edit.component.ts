@@ -20,8 +20,6 @@ export class ShoppingEditComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  newListIngredients;
-
   addIngredient(nameInput: HTMLInputElement) {
     if (nameInput.value !== '') {
       const amount = this.ingredientNumber.nativeElement.value || '1';
@@ -29,7 +27,7 @@ export class ShoppingEditComponent implements OnInit {
       this.shoppingList.addIngredient(newIngredient);
 
       this.ingredientNumber.nativeElement.value = '';
-      // this.ingredientName.nativeElement.value = ''
+      this.ingredientName.nativeElement.value = ''
     }
   }
 
