@@ -6,14 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  view = '';
 
-  setView(viewSelected: string) {
-    if (viewSelected === 'recipes') {
-      this.view = 'recipes';
-    }
-    else if (viewSelected === 'shoppingList') {
-      this.view = 'shoppingList';
-    }
-  }
 }
