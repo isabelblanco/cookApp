@@ -1,3 +1,19 @@
 .recipeImage {
   max-width: 18.75em;
 }
+
+.administrar {
+  border-radius: 4px !important;
+  margin-bottom: 5px;
+}
+
+.description {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.ingredientes li {
+  border: none;
+  list-style-type: circle;
+  padding: 5px;
+}
