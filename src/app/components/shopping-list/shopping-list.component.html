@@ -1,13 +1,12 @@
 <div class="row">
   <div class="col-xs-10">
-    <app-shopping-edit [ingredientsSelected]="ingredientsSelected"></app-shopping-edit>
+    <app-shopping-edit></app-shopping-edit>
     <hr>
     <ul *ngIf="ingredients.length" class="ingredientsList">
       <a
         class="pointer list-group-item"
-        *ngFor="let ingredient of ingredients"
-        [id]="ingredient.name"
-        (click)="selectIngredients($event.target)">
+        *ngFor="let ingredient of ingredients; let i=index"
+        (click)="onEditItem(i)">
         {{ ingredient.name }} - {{ ingredient.amount }}
       </a>
     </ul>
